@@ -2,101 +2,60 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <p>ttttttttttttttttt</p>
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="container mx-auto px-16">
+      <h1 className="text-5xl  font-bold pb-11 pt-5 text-center">zoterocss笔记主题</h1>
+      <h2 className="text-3xl font-semibold pb-1 pt-5 text-left">笔记使用说明</h2>
+      <a href="https://wk8686.top/zoteroepi93/" className="block text-xl underline decoration-dashed">笔记使用教程</a>
+      <a href="https://wk8686.top/ " className="block text-xl underline decoration-dashed">返回博客</a>
+      <h2 className="text-3xl font-semibold pb-1 pt-5 text-left mb-10">主题展示</h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="grid gap-y-20 grid-cols-2 border-black gap-x-16">
+        <div className="grid grid-cols-2 bg-white p-4 rounded-3xl shadow-md border-grey border-2 h-auto">
+          <div className="mt-10 grid grid-cols-1 gap-y-5  justify-items-center">
+            <p>zotero笔记主题CSS-多彩版</p>
+            <p>作者:Wang</p>
+            <div><button className="cursor-pointer group size-fit relative flex gap-1.5 px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24px" width="24px"><g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="Interface / Download">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+              Download
+              <div className="absolute opacity-0 -bottom-full rounded-md py-2 px-2 bg-black bg-opacity-70 left-1/2 -translate-x-1/2 group-hover:opacity-100 transition-opacity shadow-lg">
+                点我下载
+              </div>
+            </button>
+            <p className="text-xs text-center">downloaded: 120次</p>
+            </div>
+          </div>
+          <div className="content-center"><img src="https://raw.githubusercontent.com/KangWang42/98-pic_used/main/01%20pic_go/202410150913100.png" alt="" /></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="grid grid-cols-2 bg-white p-4 rounded-lg shadow-md border-grey border-2 h-auto">Card 3</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 4</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 5</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 6</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">   <p>第一行</p>  <p>第二行</p></div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 3</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 4</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 5</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 6</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">   <p>第一行</p>  <p>第二行</p></div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 3</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 4</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 5</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 6</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">   <p>第一行</p>  <p>第二行</p></div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 3</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 4</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 5</div>
+        <div className="card bg-white p-4 rounded-lg shadow-md border-grey border-2 w-2/3 h-96 justify-self-center">Card 6</div>
+
+
+      </div>
     </div>
   );
 }
